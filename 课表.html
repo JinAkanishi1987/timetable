@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小学一年级课程表</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Comic Sans MS', '微软雅黑', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #e0f7fa 0%, #bbdefb 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 900px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: #4fc3f7;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            text-shadow: 2px 2px 0 #0288d1;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .week-info {
+            background: #0288d1;
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 1rem;
+        }
+        
+        .schedule-container {
+            padding: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        
+        th, td {
+            border: 2px solid #b3e5fc;
+            padding: 12px;
+            text-align: center;
+            font-size: 1.1rem;
+        }
+        
+        th {
+            background-color: #e1f5fe;
+            color: #0277bd;
+            font-size: 1.2rem;
+        }
+        
+        .time-header {
+            background-color: #4fc3f7;
+            color: white;
+            width: 100px;
+        }
+        
+        
+        
+        .course-name {
+            font-weight: bold;
+            display: block;
+        }
+        
+        .course-room {
+            font-size: 0.9rem;
+            display: block;
+            margin-top: 5px;
+        }
+        
+        .icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        
+        .icon {
+            width: 50px;
+            height: 50px;
+            background: #e1f5fe;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            color: #0288d1;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .footer {
+            background: #e1f5fe;
+            padding: 15px;
+            text-align: center;
+            color: #0288d1;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            th, td {
+                padding: 8px;
+                font-size: 0.9rem;
+            }
+            
+            .time-header {
+                width: 70px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            th, td {
+                padding: 5px;
+                font-size: 0.8rem;
+            }
+            
+            .course-room {
+                font-size: 0.7rem;
+            }
+            
+            .time-header {
+                width: 50px;
+                font-size: 0.9rem;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            .icon {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>小学一年级课程表</h1>
+            <div class="subtitle">上南二村小学 一年级(2)班</div>
+            <div class="week-info">2025年上学期</div>
+        </div>
+        
+        <div class="schedule-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="time-header">时间/日期</th>
+                        <th>星期一</th>
+                        <th>星期二</th>
+                        <th>星期三</th>
+                        <th>星期四</th>
+                        <th>星期五</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time-header">第一节</td>
+                        <td class="">
+                            <span class="course-name">数学</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">英语</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">科学</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">语文</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">语文</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="time-header">第二节</td>
+                        <td class="">
+                            <span class="course-name">语文</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">语文</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">数学</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">语文</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">体育</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="time-header">第三节</td>
+                        <td class="">
+                            <span class="course-name">语文</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">体育</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">校本课程</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">美术</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">音乐</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="time-header">第四节</td>
+                        <td class="">
+                            <span class="course-name">科学</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">劳动</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">语文</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">数学</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">班队活动</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="time-header">第五节</td>
+                        <td class="">
+                            <span class="course-name">音乐</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">道德与法治</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">语文</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">体育</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">综合实践</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="time-header">第六节</td>
+                        <td class="">
+                            <span class="course-name">体育</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">美术</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">道德与法治</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">英语</span>
+                        </td>
+                        <td class="">
+                            <span class="course-name">校本课程</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
